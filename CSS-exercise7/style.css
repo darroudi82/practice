@@ -1,0 +1,27 @@
+.data-2 {
+  color: rgb(150, 100, 50);
+}
+p {
+  color: brown;
+  font-size: 18px;
+}
+body {
+  background-color: burlywood;
+}
+#summary .heading {
+  color: brown;
+}
+.form {
+  width: fit-content;
+  border: 3px double rgb(236, 130, 24);
+  padding: 15px;
+}
+label {
+  color: rgb(115, 33, 33);
+}
+#subm {
+  width: 75px;
+  height: 30px;
+  background-color: brown;
+  color: bisque;
+}

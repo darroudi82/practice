@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS-exercise7/style.css">
+</head>
+<body>
+    <section id="summary">
+      <h1 class="heading">جلسه هفتم</h1>
+      <p>بررسی datalist ها و فرم ها با دیزاین دهی به آنها</p>
+    </section>
+    <section>
+      <form class="form">
+        <label id="date-2">تاریخ را وارد کنید
+          <input type="date" placeholder="enter date"> 
+          </label><br>
+        <label>زمان را وارد کنید
+          <input type="time" placeholder="enter time">
+        </label><br>
+        <label>از اینجا سرچ کنید
+          <input type="search" > 
+        </label><br>
+        <label>هفته خود را وارد کنید
+          <input type="week" placeholder="enter week">
+          <label><br>
+        <label>یک محدوده را مشخص کنید
+          <input type="range" placeholder="what is your range">
+        </label><br>
+        <label>یک سایز را انتخاب کنید
+          <input type="text" list="size">
+            <datalist id="size">
+              <option value="small"></option>
+              <option value="mediume"></option>
+              <option value="large"></option>
+              <option value="x-large"></option>
+              <option value="xx-large"></option>
+          </datalist>
+        </label><br>
+        <input type="submit" value="sing up" id="subm" />
+      </form>
+    </section>
+  </body>
+</html>
