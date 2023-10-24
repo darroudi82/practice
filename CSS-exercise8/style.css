@@ -1,0 +1,74 @@
+/* body style's */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  direction: ltr;
+  background-color: rgb(193, 250, 231);
+}
+
+/* header */
+
+header {
+  font-size: larger;
+  text-align: center;
+  border-bottom: 2px dotted green;
+}
+
+h1 {
+  box-shadow: 3px 0px 3px 0px rgb(26, 188, 185);
+}
+
+/* main section */
+
+article {
+  border-bottom: 2px dotted rgba(43, 141, 43, 0.801);
+  padding: 20px;
+}
+
+img {
+  border: 2px solid black;
+  padding: 10px;
+  background-color: beige;
+  border-radius: 50%;
+}
+
+p {
+  background-image: url("download.png");
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  word-spacing: 3px;
+  line-height: 30px;
+  border-radius: 3px;
+}
+
+h2 {
+  text-shadow: 3px 1px rgb(21, 209, 215);
+  text-align: center;
+}
+
+span {
+  text-decoration: underline;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  font-style: oblique;
+  background-color: aqua;
+}
+
+/* footer */
+
+caption {
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 20px;
+  color: brown;
+}
+
+table {
+  text-align: center;
+  width: 400px;
+  border: 3px double;
+  padding: 7px;
+  background-color: rgb(252, 225, 185);
+  margin: 15px;
+}
