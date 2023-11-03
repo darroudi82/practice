@@ -2,10 +2,10 @@
 <?php 
     // if , else , elseif 
     $q="5";
-    if(3<$q<7){
+    if(3<$q && $q<7){
         echo " grade B";
     }
-    elseif(0<$q<3){
+    elseif(0<$q && $q<3){
       echo" garde A";
     }
     else{
@@ -22,7 +22,7 @@
     // while
     $b=0;
     while($b<5){
-    echo" person $a is $w[$a] ";
+    echo" person $b is $w[$b] ";
     $b++;
     }
     // foreach
