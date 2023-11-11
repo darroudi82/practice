@@ -5,9 +5,9 @@ $pass = '';
 $error = array("username"=>'',
                 "pass"=>'',
                 "total"=>'');
-// Checking submit button if clicked
+// submit clicked
 if (isset($_POST['submit'])){
-    // checking username input filled 
+    // username input
     if (empty($_POST['username'])){
         $error['username'] = "you must enter your name<br>";
     }
@@ -17,7 +17,7 @@ if (isset($_POST['submit'])){
             $error['username'] = "your name must writin by lower case (JUST lower case) <br>";
         }
     }
-    // checking Password input filled 
+    // password input
     if (empty($_POST['pass'])){
         $error['pass'] = " you have to entere your password <br>";
     }
@@ -32,7 +32,7 @@ if (isset($_POST['submit'])){
         $error['total'] = "your answers arent true";
     }
     else {
-        header("Location: resume.html");
+        header("Location: main.php");
     }
 }
 

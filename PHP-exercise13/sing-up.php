@@ -8,9 +8,9 @@ $error = array("username"=>'',
                 "ps2"=>'',
                 "email"=>'',
                 "total"=>'');
-// Checking submit button if clicked
+// clicked submit
 if (isset($_POST['submit'])){
-    // checking username input filled 
+    // input username
     if (empty($_POST['username'])){
         $error['username'] = "you have to enter your name <br>";
     }
@@ -20,7 +20,7 @@ if (isset($_POST['submit'])){
             $error['username'] = "your name must writin by lower case (JUST lower case) <br>";
         }
     }
-    // checking Password input filled 
+    //input password for first time
     if (empty($_POST['ps1'])){
         $error['ps1'] = "Password required <br>";
     }
@@ -30,7 +30,7 @@ if (isset($_POST['submit'])){
             $error['ps1'] = "Password must be include just lettes, numbers or underscore <br>";
         }
     }
-    // checking Confirming password input filled 
+    //input password for second time
     if (empty($_POST['ps2'])){
         $error['ps2'] = "Confirming password required <br>";
     }
@@ -45,7 +45,7 @@ if (isset($_POST['submit'])){
             }
         }
     }
-    // checking email input filled 
+    // input email
     if (empty($_POST['email'])){
         $error['email'] = "Email required <br>";
     }
@@ -60,7 +60,7 @@ if (isset($_POST['submit'])){
         $error['total'] = "There are some errors in your sign-up form";
     }
     else {
-        header("Location: login.php");
+        header("Location: log-in.php");
     }
 }
 
