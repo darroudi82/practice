@@ -69,4 +69,4 @@ body.appendChild(div2);
 // ساخت فانکشن برای برنامه مورد نظر 
 function setTimeout(animate(){
 };)
-btn.addEventListener('click', f1);
+animate()
