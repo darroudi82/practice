@@ -57,16 +57,100 @@ div1.style.position = 'absolute';
 // style for div2
 div2.style.height = '25px';
 div2.style.width = '25px';
-div1.style.border = '3px';
+div2.style.border = '3px';
 div2.style.background = 'blue';
 div2.style.position = 'relative';
-
+div2.style.borderRadius = "50%";
+div2.id = 'move';
 
 // افزودن تگ های ایجاد شده به تگ body
 body.appendChild(div1);
 body.appendChild(div2);
 
 // ساخت فانکشن برای برنامه مورد نظر 
-function setTimeout(animate(){
-};)
-animate()
+
+
+
+
+function moving() {
+    var p = 0;
+    // func 1
+    var t1 = setInterval(function () {
+        if (p >= 109) {
+            clearInterval(t1);
+        }
+        var pow = Math.pow(p / 5, 2);
+        var move = document.querySelector('#move');
+        move.style.left = `${(p + 2) * 4}px`;
+        move.style.top = `${pow}px`;
+        p += 1;
+        // func 2 
+        function moving2() {
+            var r = 470;
+            var t2 = setInterval(() => {
+                if (r = 0) {
+                    clearInterval(t2);
+                }
+                var move = document.querySelector('#move');
+                move.style.right = `${r}px`;
+                move.style.bottom = `${r}px`;
+                r -= 10;
+            }, 1);
+        }
+        moving2();
+    }, 100);
+
+}
+moving();
+
+
+
+// image slider
+var image = document.createElement('img');
+image.src = 'img1.jpg';
+image.style.width = '350px';
+image.style.height = '350px';
+image.style.position = 'relative';
+image.style.left = '570px';
+image.style.borderRadius = '8%';
+body.appendChild(image);
+
+var count = 1;
+var timer = setInterval(function () {
+    image.src = `img${count}.jpg`;
+    count++;
+    if (count > 3) {
+        count = 1;
+    }
+}, 2000);
+
+// image slider with click
+var butt = document.createElement('button');
+butt.innerHTML = 'pass';
+butt.style.background = 'gray';
+butt.style.textDecoration = 'Uppercase';
+butt.style.position = 'relative';
+butt.style.left = '370px';
+butt.style.top = '310px';
+butt.style.width = '80px';
+body.appendChild(butt);
+
+var image2 = document.createElement('img');
+image2.src = 'im1.jpg';
+image2.style.width = '300px';
+image2.style.height = '250px';
+image2.style.position = 'relative';
+image2.style.left = '170px';
+image2.style.top = '280px';
+image2.style.borderRadius = '8%';
+image2.style.border = '4px solid gray';
+body.appendChild(image2);
+
+var num2 = 1;
+butt.addEventListener('click', function () {
+    num2++;
+    if (num2 > 3) {
+        num2 = 1;
+    }
+    image2.src = `im${num2}.jpg`;
+})
