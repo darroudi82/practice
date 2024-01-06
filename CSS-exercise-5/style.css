@@ -1,0 +1,42 @@
+legend {
+    font-size: 18.5px;
+    color: rgb(33, 80, 22);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+fieldset {
+    display: inline;
+    height: 220px;
+    margin: 15px;
+    border: none;
+    border: 3px dotted green;
+}
+
+img {
+    display: block;
+    margin: 10px;
+}
+
+#image-1 {
+    filter: hue-rotate(45deg);
+}
+
+#image-2 {
+    filter: blur(10px);
+}
+
+#image-3 {
+    filter: sepia(100%);
+}
+
+#image-4 {
+    filter: grayscale(100%);
+}
+
+#image-5 {
+    filter: brightness(200%);
+}
+
+#image-6 {
+    filter: contrast(200%);
+}
