@@ -1,0 +1,11 @@
+@import 'varaible';
+
+.input{
+    border: none;
+    border: 2px dotted $color4;
+    border-radius: 30px;
+    background-color: $color3;
+    color: $color2;
+    width: 175px;
+    height: 32px;
+}
