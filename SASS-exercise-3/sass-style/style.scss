@@ -1,0 +1,105 @@
+//  how to make a function in sass aand scss
+// example 1
+@function add($num1 , $num2){
+    $num3 : $num1 + $num2 ;
+    @return $num3;
+}
+
+h1{
+    font-size: add(1.5,2.5) * 7px;
+    color: red;
+}
+
+
+// example 2
+
+@function a($num1 , $num2){
+    $num3 : $num1 + $num2 ;
+    @return #{$num3}px;
+}
+
+h2{
+    font-size: a(10,15);
+    color: rgb(22, 160, 79);
+}
+
+// exaple 3
+
+@function ab($num1 , $num2:7){
+    $num3 : $num1 + $num2 ;
+    @return #{$num3}px;
+}
+
+h3{
+    font-size: b(22);
+    color: rgb(29, 121, 131);
+}
+
+
+
+// how to make a mixin style ?
+// mixin without argument
+@mixin section-style(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 10px;
+    flex-direction: column;
+}
+
+
+.section1{
+    @include section-style();
+    background-color: #fbefc0;
+    &-header{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style:35px;
+    }
+    &-para{
+        font-style:22px;
+    }
+}
+
+
+.section2{
+    @include section-style();
+    background-color: #d3fbb0;
+    &-header{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style:35px;
+    }
+    &-para{
+        font-style:22px;
+    }
+}
+
+
+// mixin with argument
+@mixin list-style($backgroundcolor){
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 12px;
+    background-color: $backgroundcolor;
+}
+
+.sec-list1{
+    @include list-style( skyblue);
+    &-deader{
+        font-style: 28px;
+    }
+    &-li{
+        font-style: 20px;
+    }
+}
+
+
+.sec-list2{
+    @include list-style( #618590);
+    &-deader{
+        font-style: 28px;
+    }
+    &-li{
+        font-style: 20px;
+    }
+}
+
