@@ -1,0 +1,63 @@
+// how to make variable in sass
+$first-color:red;
+$second-color:blue;
+
+h1{
+    background-color: $first-color;
+    color: $second-color;
+}
+
+// hoe to make map-get in sass
+$colors:(
+    'num1':green,
+    'num2': skyblue,
+    'num3':white,
+);
+p {
+    background-color: map-get($colors, num1);
+    color: map-get($colors, num3);
+}
+
+// how to work with nesting
+// example 1 :
+.list-nesting{
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: brown;
+    ul{
+        color: aqua;
+        li{
+            background-color: burlywood;
+            color: rgb(48, 144, 144);
+        }
+        a{
+            font-size: medium;
+            color: red;
+        }
+    }
+}
+
+// example 2 :
+.container{
+    background-color: antiquewhite;
+    font-size: 2em;
+    &-first{
+        color: cadetblue;
+    }
+    &-second{
+        display: inline;
+        color:chocolate;
+    }
+}
+
+// example 3 :
+.div{
+    background-color: rgb(207, 228, 122);
+    font-size: 1.5em;
+    &__first{
+        color:rgb(110, 49, 5);
+    }
+    &__p{
+        color:brown;
+    }
+}
