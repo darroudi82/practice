@@ -1,0 +1,89 @@
+.conyainer {
+    /* p */
+    padding: ;
+
+    /* m */
+    margin: ;
+
+    /* p10 */
+    padding: 10px;
+
+    /* m:10 */
+    margin: 10px;
+
+    /* m10e */
+    margin: 10em;
+
+    /* m:a */
+    margin: auto;
+
+    /* m10px15px20px */
+    margin: 10px 15px 20px;
+
+    /* ml */
+    margin-left: ;
+
+    /* mt */
+    margin-top: ;
+
+    /* mb10 */
+    margin-bottom: 10px;
+
+    /* w */
+    width: ;
+
+    /* w10  */
+    width: 10px;
+
+    /* h */
+    height: ;
+
+    /* h15 */
+    height: 15px;
+
+    /* bd */
+    border: 1px solid #000;
+
+    /* d */
+    display: block;
+
+    /* dn */
+    display: none;
+
+    /* di */
+    display: inline;
+
+    /* db */
+    display: block;
+
+    /* dib */
+    display: inline-block;
+
+    /* df */
+    display: flex;
+
+    /* fs */
+    font-style: italic;
+
+    /* fz */
+    font-size: ;
+
+    /* ff */
+    font-family: serif;
+
+    /* w10! */
+    width: 10px !important;
+
+    /* @f */
+    @font-face {
+        font-family: ;
+        src: url();
+    }
+
+    /* @m */
+    @media screen {}
+
+    /* @k */
+    @keyframes identifier {}
+
+}
