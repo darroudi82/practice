@@ -1,0 +1,39 @@
+.article {
+  border: 2px dotted green;
+  border-radius: 15px;
+  background-color: rgb(195, 237, 132);
+  padding: 14px;
+}
+.article-header, .article-p, .article-span {
+  color: black;
+  font-size: 38px;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.article-p, .article-span {
+  font-size: 28px;
+}
+.article-span {
+  text-shadow: 2px 2px rgb(250, 255, 242);
+}
+
+.section-para, .section {
+  margin: 20px;
+  border: 2px double rgb(0, 0, 0);
+  background-color: rgb(153, 132, 104);
+  color: rgb(84, 28, 0);
+  border-radius: 25px 0px;
+  padding: 12px;
+  text-align: center;
+}
+
+.section-h1 {
+  font-size: 46px;
+  font-weight: bold;
+}
+.section-para {
+  font-size: 28px;
+  background-color: rgb(242, 198, 141);
+}
+
+/*# sourceMappingURL=create.css.map */
